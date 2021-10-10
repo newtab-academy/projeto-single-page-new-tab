@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End</title>
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+    <header>
+
+        <nav class="navbar">
+
+
+            <div class="group"> 
+            
+                <img src="../assets/img/Ellipse 13.png" alt="logo.png">  
+                <h2> Controle Financeiro</h2>
+            
+            </div>
+
+            <div class="navigation">
+                    <ul>
+                         <li class="item-1"><a href="">Cadastro de Transações</a></li> |
+                         <li class="item-2"><a href="">Limpar Dados</a></li>
+                    </ul>
+                </div>                
+                   
+
+
+
+            </nav>
+
+
+
+        </div>
+
+    </header>
+    <main class="container-principal">
+
+        <div class="novas-transacoes">
+
+            <div class="container-titulo">
+                <h1>Nova transação</h1> 
+            </div>
+            
+            <form> 
+                <p>
+                <label for="tipo-transacao"><h4>Tipo de transação</h4> </label> <br>
+                <select name="tipo-transacao" id="tipo-transacao" aria-placeholder="Compra">
+                <option value="Compra">Compra</option>
+                <option value="Venda">Venda</option>
+                
+                </select> 
+                </p>
+
+                <p>
+                <label for="nome-mercadoria" ><h4>Nome da mercadoria</h4></label> <br>
+                <input type="text" id="nome-mercadoria" placeholder="Digite o nome do produto" >
+                </p>
+
+                <P>
+                <label for="valor"><h4>Valor</h4></label> <br>
+                <input type="text" id="valor" placeholder="R$:0,00">
+                </P>
+
+                <button value="Adicionar Transacão">Adicionar Transacão</button>
+            </form>
+
+         </div>
+
+         <section class="extrato-transacao">
+            
+            <div class="container-principal-2" >         
+                
+                   
+                <div class="extrato-transacao-titulo">
+                    <h5>Extrato de Transações</h5>
+                </div>
+            
+         
+         
+
+            <div class="extrato-transacao-centralizacao" >
+                <div class="mercadorias">
+                    Mercadoria
+                    <hr>
+                    Lorem ipsum dolor sit amet consectetur
+                    <hr>
+                    Quis nostrud exercitation
+                    <hr>
+                    Lorem ipsum
+                    <hr class="hr-2">
+                    <hr class="hr-2">
+                    Total
+                </div>
+                <div class="valores-finais">
+                    Valor
+                    <hr class="hr-1" >
+                    <br>
+                    R$:12.999,99
+                    <hr>
+                    R$:99,99
+                    <hr class="hr-1">
+                    R$:9,99
+                    
+
+                    <hr class="hr-2">
+                    <hr class="hr-2">
+                    R$:12.909,99
+                </div>
+            </div>
+
+           
+             </div>  
+         </section>
+
+
+
+
+    </main>
+    <footer></footer>
+</body>
+</html>
+
