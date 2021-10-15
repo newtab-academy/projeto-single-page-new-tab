@@ -2,9 +2,6 @@
 .novas-transacoes{
     margin-top: 30px;
     margin-left:200px;
-    /*
-    width: 400px;
-    height: 344px; */
     border: 1px solid black;
     padding: 15px 15px;
     padding-top: 20px;
@@ -17,7 +14,6 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
-    border: 2px solid red;
 }
 .container-titulo{
 display: flex;
@@ -28,7 +24,6 @@ h1 {
     width: 174px;
     height: 20px;
     text-align: center;
-    border: 2px solid black;
     font-size: 18px;
     line-height: 22px;
     margin-top: 20px;
@@ -37,18 +32,25 @@ h1 {
 
 select, input {
     margin-top:3px;
-    width: 370px;
+    width: 372px; 
     height: 32px;
     
 }
 
 select {
+    width: 374px;
+    margin-bottom: 20px;
+    
+}
+
+#nome-mercadoria {
     margin-bottom: 20px;
 }
 
-#nome-mercadoria{
-    margin-bottom: 20px;
+#nome-mercadoria ::placeholder {
+    color: red;
 }
+
 
 #valor {
     margin-bottom: 20px;
@@ -57,14 +59,23 @@ select {
 button {
     color: #fff;
     background-color: #333333;
-    width: 370px;
-    height: 32px;
+    width: 376px;
+    height: 36px;
+
 }
 
-.container-principal-2{
-    margin-top: 26px;
-    margin-right: 20px;
-    border: 2px solid rgb(72, 11, 240);
+#tipo-transacao {
+    color: rgb(82, 82, 82);
+    width: 376px;
+    height: 36px;
+  
+}
+
+
+
+.container-principal-2 {
+    margin-top: 80px;
+    margin-right: 70px;
     width: 680px;
     height: 281px;
 }
@@ -77,12 +88,14 @@ button {
    margin-top: 21px;
    margin-bottom:19px ;
    text-align: center;
+   font-weight: 700;
 }
 
-h5 {
-    width: 174px;
-    height: 20px;
-    border: 2px solid blue;
+.extrato-transacao-titulo h3 {
+    font-size: 18px;
+    font-weight: 700;
+    width: 178px;
+    height: 24px;
 }
 
 .extrato-transacao-centralizacao{
@@ -92,25 +105,187 @@ h5 {
  margin-right: 20px;
 }
 
-hr{
-    margin-top: 3px;
+#grid {
+    display: grid;
+    grid-template-columns: 10px fr;
+    margin-right: 15px;
+}
+
+.sinal1 {
+    margin-top: 23px;
+} 
+
+.sinal2 {
+    margin-top: 18px;
+}
+
+.sinal3{
+    margin-bottom: 23px;
+}
+
+.mercadorias {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    word-break: break-all;
+}
+
+hr {
+    margin-top: 10px;
     border: 0;
-    border-top: 1px solid  #030305
+    border-top: 1px solid  #030305;
     
 }
 
 .hr-1{
     width: 400px;
+    margin-top: 10px;
 
 }
+
 
 .hr-2{
-    margin-top: 3px;
+    margin-top: 10px;
 }
-.mercadorias {
-    
+
+.hr-3 {
+    margin-top: 2px;
+}
+
+#valor-12999{
+    position: relative;
+    bottom: 15px;
 }
 
 .valores-finais{
-text-align: right   ;
+text-align: right;
 }
+
+footer{
+    width: 100%;
+    border: 5px solid #333;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Tablet Landscape */
+
+
+@media screen and (max-width: 1112px) {
+
+ .group {
+     margin-left: 20px;
+ }
+
+
+.navigation {
+    margin-right: 20px;
+}
+
+.novas-transacoes {
+  
+    margin-left: 20px;
+}
+
+.extrato-transacao {
+    margin-left: 20px;
+    width: 680px;
+}
+
+}
+
+
+/* Tablet Portrait */
+
+@media screen and (max-width: 768px) {
+   
+
+    /* Navbar */
+
+
+   .navigation {
+       display: none;
+   }
+
+   .navbar {
+       justify-content: center;
+      
+     
+   }
+
+   .group .img-logo {
+    position: absolute;
+    right: 700px;
+
+   }
+
+    .img-logo { 
+    width: 30px;
+    height: 27px;
+   }
+
+
+   /* Content Main */
+
+   .container-principal {
+       display: flex;
+       flex-direction: column;
+       
+      
+       
+   }
+
+   .novas-transacoes {
+      text-align: center;
+      padding: 0;
+        
+
+    }
+
+    
+       
+    #tipo-transacao, .h4-transacao {
+        width: 150px;
+        height: 32px;
+        border: 1px solid black;
+  
+    }
+
+    #nome-mercadoria, .h4-mercadoria {
+        width: 348px;
+        height: 32px;
+        border: 1px solid black;
+
+    }
+
+    #valor, .h4-valor {
+        width: 150px;
+        height: 32px;
+        border: 1px solid black;
+
+    }
+
+    #adicionar-transacao, h4 {
+        width: 200px;
+        height: 32px;
+        border: 1px solid black;
+
+    }
+
+    form  {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+
+    
+
+}
+
+
+
+
+
+

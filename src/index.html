@@ -14,15 +14,14 @@
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
+    <!--Barra de Navegação-->
     <header>
 
         <nav class="navbar">
-
-
             <div class="group"> 
             
-                <img src="../assets/img/Ellipse 13.png" alt="logo.png">  
-                <h2> Controle Financeiro</h2>
+                <img class="img-logo" src="../assets/img/Ellipse 13.png" alt="logo.png">  
+                <h2 class="controle-financeiro"> Controle Financeiro</h2>
             
             </div>
 
@@ -32,17 +31,12 @@
                          <li class="item-2"><a href="">Limpar Dados</a></li>
                     </ul>
                 </div>                
-                   
-
-
-
             </nav>
-
-
-
         </div>
 
     </header>
+
+    <!-- Caixa de Novas Tranções-->
     <main class="container-principal">
 
         <div class="novas-transacoes">
@@ -51,69 +45,74 @@
                 <h1>Nova transação</h1> 
             </div>
             
-            <form> 
+            <form action="/"> 
                 <p>
-                <label for="tipo-transacao"><h4>Tipo de transação</h4> </label> <br>
-                <select name="tipo-transacao" id="tipo-transacao" aria-placeholder="Compra">
+                    <h4 class="h4-transacao ">Tipo de transação</h4> 
+                <label for="tipo-transacao"></label>                  
+                    <br>
+                <select name="tipo-transacao" id="tipo-transacao" placeholder="Compra">
                 <option value="Compra">Compra</option>
-                <option value="Venda">Venda</option>
-                
+                <option value="Venda">Venda</option>                
                 </select> 
                 </p>
 
                 <p>
-                <label for="nome-mercadoria" ><h4>Nome da mercadoria</h4></label> <br>
-                <input type="text" id="nome-mercadoria" placeholder="Digite o nome do produto" >
+                <h4 class="h4-mercadoria">Nome da mercadoria</h4> 
+                <label for="nome-mercadoria"></label> <br>
+                <input type="text" id="nome-mercadoria" placeholder="Digite o nome do produto">
                 </p>
 
                 <P>
-                <label for="valor"><h4>Valor</h4></label> <br>
+                <label for="valor"><h4 class="h4-valor">Valor</h4></label> <br>
                 <input type="text" id="valor" placeholder="R$:0,00">
                 </P>
 
-                <button value="Adicionar Transacão">Adicionar Transacão</button>
+                <button value="Adicionar Transacão" id="adicionar-transacao">Adicionar Transacão</button>
             </form>
 
          </div>
 
-         <section class="extrato-transacao">
-            
-            <div class="container-principal-2" >         
-                
-                   
+         <!-- Extrato de transações - 2caixa -->
+         <section class="extrato-transacao">           
+            <div class="container-principal-2" >                                       
                 <div class="extrato-transacao-titulo">
-                    <h5>Extrato de Transações</h5>
+                    <h3>Extrato de Transações</h3>
                 </div>
             
-         
-         
-
-            <div class="extrato-transacao-centralizacao" >
+            <div class="extrato-transacao-centralizacao">
+                <div id="grid">
+                <div class="sinal1">&#43;</div>            
+                <div class="sinal2">&#8722;</div>    
+                  <div class="sinal3">&#43;</div>
+                </div>
+                
                 <div class="mercadorias">
                     Mercadoria
-                    <hr>
+                    <hr>          
                     Lorem ipsum dolor sit amet consectetur
                     <hr>
-                    Quis nostrud exercitation
+                  Quis nostrud exercitation
                     <hr>
+                    </span>
                     Lorem ipsum
                     <hr class="hr-2">
-                    <hr class="hr-2">
+                    <hr class="hr-3">
                     Total
                 </div>
+
+
                 <div class="valores-finais">
                     Valor
-                    <hr class="hr-1" >
+                    <hr class="hr-1">
                     <br>
-                    R$:12.999,99
+                    <span id="valor-12999" >R$:12.999,99</span>
                     <hr>
                     R$:99,99
                     <hr class="hr-1">
-                    R$:9,99
+                   R$:9,99
                     
-
                     <hr class="hr-2">
-                    <hr class="hr-2">
+                    <hr class="hr-3">
                     R$:12.909,99
                 </div>
             </div>
@@ -127,6 +126,7 @@
 
     </main>
     <footer></footer>
+    
 </body>
 </html>
 
