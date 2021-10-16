@@ -225,6 +225,8 @@ footer{
     height: 27px;
    }
 
+    /* Adicionar Menu aqui */
+
 
    /* Content Main */
 
@@ -247,55 +249,115 @@ footer{
 
     }
 
-    
+    form  {
+        display: flex;
+        margin-top: 20px;
+      
+    }
+
+    h4 {
        
-    #tipo-transacao, .h4-transacao {
+        margin-left: 20px;
+        text-align: start;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 22px;
+        color: #333333;
+        
+    }
+       
+    #tipo-transacao {
         width: 150px;
         height: 32px;
-        border: 1px solid black;
+     
+        position: relative;
+        right: 64px;
+
   
     }
 
-    #nome-mercadoria, .h4-mercadoria {
+    #nome-mercadoria {
         width: 348px;
         height: 32px;
-        border: 1px solid black;
-
+        position: relative;
+        right: 72px;
+        
     }
 
-    #valor, .h4-valor {
+    #valor {
         width: 150px;
         height: 32px;
-        border: 1px solid black;
-
+        position: relative;
+        right: 37px;
+      
     }
 
-    #adicionar-transacao, h4 {
+    #adicionar-transacao {
         width: 200px;
         height: 32px;
+        margin-top: 75px;
+        margin-right: 20px;
+        color:  #FFFFFF;
+        text-align: center;
         border: 1px solid black;
 
     }
 
-    form  {
-        display: flex;
-        justify-content: space-between;
-    }
+   
+
+   
+
+
 
 #tipo-transacao, #nome-mercadoria, #valor {
-    margin-top: 60px;
-    float: left;
-    clear: both;
+    margin-top: 40px;
+    margin-bottom: 0px;
+
+
+}
+
+}
+
+
+/*Faltam alguns ajustes e o menu hamburguer */
+
+
+@media screen and (max-width:411px){
+
+
+    
+/* Navbar */
+
+
+.navigation {
+    display: none;
+}
+
+.navbar {
+    justify-content: center;
    
-    
-
-}
-    
-
+  
 }
 
+.group .img-logo {
+ position: absolute;
+ left: 22px;
+ 
+
+}
+
+ .img-logo { 
+ width: 30px;
+ height: 27px;
+}
+
+ /* Adicionar Menu aqui */
+
+    
+}
 
 
 
-
+ /* Content Main */
 
