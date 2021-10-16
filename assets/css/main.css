@@ -237,8 +237,12 @@ footer{
    }
 
    .novas-transacoes {
+
       text-align: center;
       padding: 0;
+      width: 728px;
+      height: 189px;
+    
         
 
     }
@@ -276,10 +280,16 @@ footer{
     form  {
         display: flex;
         justify-content: space-between;
-        
-        
     }
 
+#tipo-transacao, #nome-mercadoria, #valor {
+    margin-top: 60px;
+    float: left;
+    clear: both;
+   
+    
+
+}
     
 
 }
