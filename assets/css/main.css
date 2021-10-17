@@ -9,6 +9,10 @@
     
 }
 
+h4 {
+    margin-bottom: -17px;
+}
+
 
 .container-principal{
     display: flex;
@@ -70,7 +74,6 @@ button {
     height: 36px;
   
 }
-
 
 
 .container-principal-2 {
@@ -165,9 +168,13 @@ footer{
     width: 100%;
     border: 5px solid #333;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
 }
 
+footer > span{
+    width: 100%;
+
+}
 
 /* Tablet Landscape */
 
@@ -184,8 +191,8 @@ footer{
 }
 
 .novas-transacoes {
-  
-    margin-left: 20px;
+    width: 400px;
+    margin-left: 5px;
 }
 
 .extrato-transacao {
@@ -198,10 +205,10 @@ footer{
 
 /* Tablet Portrait */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 411px;) and (max-width: 768px) {
    
 
-    /* Navbar */
+    /* Navbar Header */
 
 
    .navigation {
@@ -339,37 +346,105 @@ input[input="type"]::placeholder {
 /*Faltam alguns ajustes e o menu hamburguer */
 
 
-@media screen and (max-width:411px){
+@media screen and (max-width:411px) {
 
-/* Navbar */
+/* Navbar Header*/
+
+* {
+    max-width: 100%;
+    margin: auto;
+}
 .navigation {
     display: none;
 }
 
 .navbar {
-    justify-content: center;
+    width: 100%;
    
-  
 }
 
-.group .img-logo {
- position: absolute;
- left: 22px;
- 
 
-}
 
  .img-logo { 
  width: 30px;
  height: 27px;
+ margin-right: 22px;
 }
 
- /* Adicionar Menu aqui */
-
-    
+.controle-financeiro{
+   text-align: center;
+   width: 270px;
+  
+   
 }
-
-
 
  /* Content Main */
 
+ .extrato-transacao{
+     width: 371px;
+ }
+
+.container-titulo {
+    display: none;
+}
+
+h4 {
+    margin-bottom: -17px;
+}
+
+select {
+    margin-bottom: 20px;
+}
+
+.novas-transacoes {
+    border: none;
+    margin-right: 20px;
+}
+
+  .extrato-transacao-centralizacao {
+  margin-right:70px ;
+  margin-left: 40px;
+      
+ }
+.container-principal {
+    flex-direction: column;
+}
+
+.container-principal-2 {
+  width: 100%;
+    
+
+}
+
+
+
+.mercadorias{
+width: 165px;
+height: 160px;
+word-break: keep-all;
+}
+
+.valores-finais {
+width: 165px;
+height: 160px;
+margin: 0px;
+}
+
+
+footer {
+    display: none;
+}
+
+#quis {
+    white-space: nowrap;
+}
+
+
+
+}
+
+
+
+ 
+
+ 
