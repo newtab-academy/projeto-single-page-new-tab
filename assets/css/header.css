@@ -18,7 +18,7 @@ body {
     height: 80px;
 }
 
-#toggle {
+#toggle, #check {
     display: none;
 }
 
@@ -63,14 +63,13 @@ margin-bottom: 22px;
 
 
 
-a {
-    
+a { 
     text-decoration: none;
     color: black;
+    padding-right: 5px;
 }
 
 a:hover {
-
     color: blue;
 }
 
