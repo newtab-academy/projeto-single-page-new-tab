@@ -18,6 +18,8 @@ body {
     height: 80px;
 }
 
+
+
 #toggle, #check {
     display: none;
 }
@@ -32,10 +34,19 @@ align-items: center;
 
 }
 
+
+
 h2 {
     all: unset;
-    margin-top: 4px;
+  
 
+}
+.controle-financeiro{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+   
 }
 
 img{
@@ -51,11 +62,9 @@ img{
 .navigation{    
 display: inline-flex;
 align-items: center;
-width: 310px;
-height: 40px;
-background-color: #fff;
+width: 100%;
 align-items: center;
-margin-right: 200px;
+margin-left: 200px;
 margin-top: 22px;
 margin-bottom: 22px;
 
@@ -70,7 +79,7 @@ a {
 }
 
 a:hover {
-    color: blue;
+    color:rgb(250, 40, 40);
 }
 
 
@@ -83,9 +92,11 @@ a:hover {
 
 ul {
     display: flex;
+    align-items: center;
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    background-color:#fff;
+    width: 320px;
+    height: 40px;
 }
 
 li {

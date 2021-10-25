@@ -1,6 +1,6 @@
 .novas-transacoes{
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 200px;
     border: 1px solid black;
     padding: 15px 15px;
     padding-top: 20px;
@@ -41,9 +41,14 @@ select, input {
 }
 
 select {
+    padding-left: 10px;
     width: 374px;
     margin-bottom: 20px;
     
+}
+
+input::placeholder{
+    padding-left:12px ;
 }
 
 #nome-mercadoria {
@@ -77,7 +82,7 @@ button {
 
 .container-principal-2 {
     margin-top: 80px;
-    margin-right: 70px;
+    margin-right: 200px;
     width: 680px;
     height: 281px;
 }
@@ -136,7 +141,7 @@ button {
 hr {
     margin-top: 10px;
     border: 0;
-    border-top: 1px solid  #030305;
+    border-top: 1px solid  #979797;
     
 }
 
@@ -205,9 +210,14 @@ footer > span{
     width: 100%;
 }    
 
-.navbar {
-    width: 1112px;
+.navbar  {
+    display: flex;
+    
 }    
+
+.container-principal {
+    display: flex;
+}
 
  .group {
      margin-left: 20px;
@@ -240,7 +250,7 @@ footer {
 
 
 
-@media screen and (min-width: 501px) and (max-width: 768px) {
+@media screen and (min-width: 502px) and (max-width: 768px) {
    
         body {
         overflow: hidden;
@@ -248,9 +258,26 @@ footer {
 
     /* Navbar Header */
 
+.img-logo { 
+    width: 30px;
+    height: 27px;
+    display: inline-block;  
+   }
+
+.controle-financeiro {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 
-
+ #toggle {  
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+    } 
 
 .navigation {
     z-index: 1;
@@ -268,9 +295,29 @@ footer {
     
    }
 
-   
+   .navigation ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 70px;
+      color: white;
+   }
 
-  
+   ul li  {    
+       cursor: pointer;
+       margin: 0px;    
+   }
+
+   li, .item-2 {
+       margin-left: 0px;
+   }
+
+   ul {
+       background-color: #333;
+   }
 
    #check:checked ~ .navigation  {
        transform: translateX(300px)
@@ -282,92 +329,34 @@ footer {
    #check {
        display: none;
    }
-
-  
-   .navigation ul {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      height: 100%;
-      position: absolute;
-      top: 70px;
-      color: white;
-   }
-
-   ul li  {
-       cursor: pointer;
-       margin: 0px;
-
-       
-   }
-
-   ul li a { 
-       color: #FFFFFF;
-   }
-
-   ul {
-    display: inline;
-    width: 100%;
-   
- }
+ 
 
 a {
+    display: block;
+    text-align: right;
     width: 300px;
     padding-top:10px ;
     padding-bottom: 10px;
     padding-right: 20px;
-}
-
-   a {
-    display: block;
-    text-align: right;
-
+    color: #FFFFFF;
 }
 
     a:hover{
     color: #333333;
     background-color:  #C4C4C4;
-    
- 
-
+    width: 300px;
 }
 
    .barra { 
    display: none;
 }
 
-   #toggle {  
-    display: flex;
-    align-items: center;
-    z-index: 2;
-    cursor: pointer;
-    } 
-
-    
-   
-
-   .navbar {
-       display:flex;
-       justify-content: space-between;
-       width: 768px;
-   }
-   
-
-    .img-logo { 
-    width: 30px;
-    height: 27px;
-    display: inline-block;  
-   }
-   
-
-
-    /* Adicionar Menu aqui */
-
+  
+ 
 
    /* Content Main */
 
    .container-principal {
-       display: flex;
        flex-direction: column;
        
    }
@@ -385,8 +374,9 @@ a {
       
     }
 
+    
+
     h4 {
-      
         margin-left: 20px;
         text-align: start;
         font-size: 14px;
@@ -468,21 +458,19 @@ a {
     border: 1px solid #979797;
 }
 
-input[input="type"]::placeholder {
-    margin-left: 5px;
-}
+
 
 }
 
-/*Faltam alguns ajustes e o menu hamburguer */
 
-@media screen and (min-width: 411px) and (max-width: 500px) {
+@media screen and (max-width: 501px) {
 
 /* Navbar Header*/
 
 * {
     max-width: 100%;
     margin: auto;
+    overflow: hidden;
 }
 .navigation {
     z-index: 1;
@@ -500,7 +488,7 @@ input[input="type"]::placeholder {
     
    }
 
-   #check:checked ~ .navigation  {
+#check:checked ~ .navigation  {
     transform: translateX(300px)
 }
 #check:checked ~ button {
@@ -512,7 +500,6 @@ input[input="type"]::placeholder {
 }
 
 .navigation ul {
-    display: flex;
     flex-direction: column;
     text-align: center;
     height: 100%;
@@ -521,10 +508,9 @@ input[input="type"]::placeholder {
     color: white;
  }
 
- ul li  {
+ ul li, .item-2  {
     cursor: pointer;
-    margin: 0px;
-
+    margin: 0;
     
 }
 
@@ -535,28 +521,22 @@ ul li a {
 ul {
  display: inline;
  width: 100%;
+ background-color: #333;
 
 }
 
-a {
- width: 300px;
- padding-top:10px ;
+a { 
+display: block;
+ text-align: right;
+ padding-top: 10px;
  padding-bottom: 10px;
  padding-right: 20px;
-}
-
-a {
- display: block;
- text-align: right;
-
 }
 
  a:hover{
  color: #333333;
  background-color:  #C4C4C4;
  
-
-
 }
 
 .barra { 
@@ -574,6 +554,7 @@ display: none;
 
 
 .navbar {
+    width: 100%;
     display:flex;
     justify-content: space-between;
     width: 768px;
@@ -583,18 +564,11 @@ display: none;
  .img-logo { 
  width: 30px;
  height: 27px;
- display: inline-block;  
-}
-.navbar {
-    width: 100%;
-   
+ display: inline-block;
+ margin-right: 22px;  
 }
 
- .img-logo { 
- width: 30px;
- height: 27px;
- margin-right: 22px;
-}
+
 
 .controle-financeiro{
    text-align: center;
@@ -608,6 +582,7 @@ display: none;
 
  .extrato-transacao{
      width: 371px;
+     margin-left: 45px;
  }
 
 .container-titulo {
@@ -624,7 +599,7 @@ select {
 
 .novas-transacoes {
     border: none;
-    margin-right: 20px;
+    margin-left: 40px;
 }
 
   .extrato-transacao-centralizacao {
@@ -637,6 +612,7 @@ select {
 }
 
 .container-principal-2 {
+  border-top: 1px solid #979797;
   margin-top: 20px;
   width: 100%;
     
